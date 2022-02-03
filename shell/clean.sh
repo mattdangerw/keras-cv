@@ -1,5 +1,7 @@
 #!/bin/bash
-rm -rf keras_cv.egg-info/
-rm -rf keras_cv/**/__pycache__
-rm -rf keras_cv/__pycache__
 
+base_dir=$(dirname $(dirname $0))
+
+rm -rf ${base_dir}/keras_cv.egg-info/
+rm -rf ${base_dir}/keras_cv/**/__pycache__
+rm -rf ${base_dir}/keras_cv/__pycache__
